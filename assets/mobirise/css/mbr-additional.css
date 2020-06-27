@@ -1224,7 +1224,7 @@ hr {
   z-index: 1;
 }
 .cid-s37Fokdkk4 .card:first-child .card-inner {
-  background-color: #e1201d;
+  background-color: #000000;
 }
 .cid-s37Fokdkk4 .card:first-child .card-inner .mbr-iconfont1 {
   color: #ffffff;
@@ -1237,9 +1237,6 @@ hr {
 }
 .cid-s37Fokdkk4 .card:first-child .card-inner:hover .card-title:after {
   background: #ffffff;
-}
-.cid-s37Fokdkk4 .card:first-child .card-inner:hover {
-  background-color: #000000;
 }
 .cid-s37Fokdkk4 .block-title,
 .cid-s37Fokdkk4 .mbr-section-title,
