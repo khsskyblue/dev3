@@ -1238,6 +1238,9 @@ hr {
 .cid-s37Fokdkk4 .card:first-child .card-inner:hover .card-title:after {
   background: #ffffff;
 }
+.cid-s37Fokdkk4 .card:first-child .card-inner:hover {
+  background-color: #000000;
+}
 .cid-s37Fokdkk4 .block-title,
 .cid-s37Fokdkk4 .mbr-section-title,
 .cid-s37Fokdkk4 .line,
