@@ -1119,6 +1119,7 @@ hr {
 .cid-s37Fokdkk4 {
   padding-top: 240px;
   padding-bottom: 0px;
+  background-color: #000000;
 }
 .cid-s37Fokdkk4 .mbr-iconfont2 {
   color: #e1201d;
@@ -1326,60 +1327,6 @@ hr {
 }
 .cid-s37SQLQciH .btn:hover {
   color: #ffffff !important;
-}
-.cid-s3aAg0eECB {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  background-color: #ffffff;
-}
-@media (min-width: 767px) {
-  .cid-s3aAg0eECB .container {
-    padding: 1rem;
-  }
-}
-.cid-s3aAg0eECB .card-box {
-  padding: 0 2rem;
-}
-.cid-s3aAg0eECB .card {
-  padding: 0!important;
-}
-.cid-s3aAg0eECB .mbr-section-btn {
-  padding-top: 2rem;
-}
-.cid-s3aAg0eECB .container-fluid {
-  padding: 0;
-}
-.cid-s3aAg0eECB .card1 {
-  background-image: url("../../../assets/images/1.jpg");
-}
-.cid-s3aAg0eECB .card2 {
-  background-image: url("../../../assets/images/3.jpg");
-}
-.cid-s3aAg0eECB .card3 {
-  background-image: url("../../../assets/images/38.jpg");
-}
-.cid-s3aAg0eECB h4 {
-  font-weight: 500;
-  margin-bottom: 0;
-  padding-top: 2rem;
-}
-.cid-s3aAg0eECB p {
-  margin-bottom: 0;
-  padding-top: 1.5rem;
-}
-.cid-s3aAg0eECB .card-wrapper {
-  height: 100%;
-  padding: 25rem 2rem 5rem 2rem;
-  background-size: cover;
-}
-.cid-s3aAg0eECB .btn {
-  margin: 0!important;
-  padding: 1rem 2rem;
-}
-@media (max-width: 767px) {
-  .cid-s3aAg0eECB .card-wrapper {
-    padding: 15rem 1rem 3rem 1rem;
-  }
 }
 .cid-s3aA4Ppr4i {
   padding-top: 0px;
