@@ -1328,6 +1328,27 @@ hr {
 .cid-s37SQLQciH .btn:hover {
   color: #ffffff !important;
 }
+.cid-s3anVG6dKZ {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  background-color: #ffffff;
+}
+.cid-s3anVG6dKZ H1 {
+  color: #57468b;
+}
+.cid-s3anVG6dKZ .mbr-text,
+.cid-s3anVG6dKZ .mbr-section-btn {
+  color: #716c80;
+}
+.cid-s3anVG6dKZ img {
+  width: 100%;
+  border-radius: 10px;
+}
+@media (min-width: 1200px) {
+  .cid-s3anVG6dKZ .col-lg-6 {
+    padding: 0 2rem;
+  }
+}
 .cid-rRBILABAaP {
   padding-top: 90px;
   padding-bottom: 0px;
