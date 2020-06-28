@@ -51,8 +51,9 @@
       }
     ],
     "uniqCompNum": 43,
-    "versionPublish": "4.12.4",
-    "imageResize": true
+    "versionPublish": "5.0.10",
+    "imageResize": true,
+    "screenshot": "screenshot.png"
   },
   "pages": {
     "index.html": {
