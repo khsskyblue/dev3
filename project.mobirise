@@ -50,7 +50,7 @@
         "url": "https://fonts.googleapis.com/css?family=Black+Han+Sans:400"
       }
     ],
-    "uniqCompNum": 51,
+    "uniqCompNum": 53,
     "versionPublish": "5.0.10",
     "imageResize": true,
     "screenshot": "screenshot.png",
@@ -3289,6 +3289,167 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "@media (max-width: 767px)": {
+              "h2": {
+                "margin-bottom": "1rem"
+              }
+            },
+            "@media (min-width: 767px)": {
+              ".container": {
+                "position": "relative"
+              },
+              ".row": {
+                "margin": "0"
+              },
+              "h2": {
+                "margin": "0"
+              }
+            },
+            ".mbr-section-subtitle": {
+              "color": "#e9204f"
+            },
+            ".mbr-text": {
+              "margin-top": "1.4rem"
+            },
+            "h2": {
+              "color": "#ffffff"
+            }
+          },
+          "_name": "info3",
+          "_customHTML": "<section class=\"mbr-section info3\" group=\"Call To Action\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!--Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/man-3.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/94651406\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Gradient Bg\" name=\"gradientBg\" condition=\"bg.type=='color'\">\n        <input type=\"color\" name=\"color2\" title=\"Color 2\" value=\"#2bdc9d\" condition=\"bg.type=='color' && gradientBg\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-lg-12 align-center\">\n              <h2 mbr-if=\"showTitle\" class=\"mbr-fonts-style mbr-section-title mbr-bold mbr-black\" mbr-theme-style=\"display-2\" data-app-selector=\"h2\">\n              문의</h2>\n              <h3 class=\"mbr-section-subtitle mbr-bold mbr-fonts-style\" mbr-if=\"showSubTitle\" mbr-theme-style=\"display-7\">WE ARE DEGITAL &amp; CREATIVE AGENCY\n              </h3>\n              <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\">작성하여주시면 정성껏 답변드리겠습니다.</p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "s3dflgAF57",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "info3-1g"
+        },
+        {
+          "alias": "mobirise4-blocks/components",
+          "_isSecondary": true,
+          "typeCompatible": "type",
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            ".mbr-overlay": {
+              "background-color": "@overlayColor",
+              "opacity": "@overlayOpacity"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "textarea": {
+              "min-height": "150px"
+            },
+            ".mbr-iconfont": {
+              "position": "absolute",
+              "right": "1.2rem",
+              "color": "@iconColor",
+              "top": "50%",
+              "transform": "translateY(-50%)",
+              "font-size": "1.2rem"
+            },
+            "& when (@customStyle)": {
+              ".form-control, .field-input": {
+                "padding": "1rem",
+                "background-color": "@fieldColor",
+                "border": "1px solid @borderColor",
+                "color": "@formText !important",
+                "transition": "0.4s",
+                "font-size": "0.9rem",
+                "box-shadow": "none",
+                "border-radius": "8px",
+                "outline": "none",
+                "input::-webkit-input-placeholder, textarea::-webkit-input-placeholder": {
+                  "color": "@formPlaceholder !important"
+                },
+                "input:-moz-placeholder, textarea:-moz-placeholder": {
+                  "color": "@formPlaceholder !important"
+                },
+                "&:hover, &:focus": {
+                  "background-color": "@fieldHover",
+                  "border-color": "@borderHover",
+                  "color": "contrast(@fieldHover, #000000, #ffffff, 30%)",
+                  "box-shadow": "none",
+                  "outline": "none",
+                  "input::-webkit-input-placeholder, textarea::-webkit-input-placeholder": {
+                    "color": "contrast(@formPlaceholder, #000000, #ffffff, 30%)"
+                  },
+                  "input:-moz-placeholder, textarea:-moz-placeholder": {
+                    "color": "contrast(@formPlaceholder, #000000, #ffffff, 30%)"
+                  }
+                }
+              },
+              ".jq-number__spin:hover, .jq-number__spin:focus": {
+                "background-color": "@fieldHover",
+                "border-color": "@borderHover",
+                "color": "contrast(@fieldHover, #000000, #ffffff, 30%)",
+                "box-shadow": "none",
+                "outline": "none"
+              },
+              ".jq-number__spin": {
+                "background-color": "@fieldColor",
+                "border-color": "@borderColor",
+                "color": "@formText",
+                "transition": "0.4s",
+                "box-shadow": "none",
+                "outline": "none"
+              },
+              ".jq-selectbox li, .jq-selectbox li": {
+                "background-color": "@fieldColor",
+                "color": "contrast(@fieldColor, #000000, #ffffff, 30%)"
+              },
+              ".jq-selectbox li:hover, .jq-selectbox li.selected": {
+                "background-color": "@fieldHover",
+                "color": "contrast(@fieldHover, #000000, #ffffff, 30%)"
+              },
+              ".jq-selectbox:hover .jq-selectbox__trigger-arrow, .jq-number__spin.minus:hover:after, .jq-number__spin.plus:hover:after": {
+                "border-top-color": "@fieldColor",
+                "border-bottom-color": "@fieldColor"
+              },
+              ".jq-selectbox .jq-selectbox__trigger-arrow, .jq-number__spin.minus:after, .jq-number__spin.plus:after": {
+                "border-top-color": "@fieldHover",
+                "border-bottom-color": "@fieldHover"
+              }
+            },
+            "& when (@customStyle), (@disableElements)": {
+              "input::-webkit-clear-button": {
+                "display": "none"
+              },
+              "input::-webkit-inner-spin-button": {
+                "display": "none"
+              },
+              "input::-webkit-outer-spin-button": {
+                "display": "none"
+              },
+              "input::-webkit-calendar-picker-indicator": {
+                "display": "none"
+              }
+            }
+          },
+          "_name": "extForm22",
+          "_customHTML": "<section class=\"form\" group=\"Form\" plugins=\"formstyler, datepicker\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <header>Style</header>\n        <input type=\"checkbox\" name=\"customStyle\" title=\"Custom Style\" checked>\n        <input type=\"color\" name=\"iconColor\" title=\"Icons Color\" value=\"#e1201d\">\n        <input type=\"checkbox\" name=\"disableElements\" title=\"Disable Control\" checked>\n        <input type=\"color\" name=\"fieldColor\" title=\"Field\" value=\"#ffffff\" condition=\"customStyle\">\n        <input type=\"color\" name=\"fieldHover\" title=\"Field Hover\" value=\"#ffffff\" condition=\"customStyle\">\n        <input type=\"color\" name=\"borderColor\" title=\"Border\" value=\"#767676\" condition=\"customStyle\">\n        <input type=\"color\" name=\"borderHover\" title=\"Border Hover\" value=\"#767676\" condition=\"customStyle\">\n        <input type=\"color\" name=\"formText\" title=\"Text\" value=\"#767676\" condition=\"customStyle\">\n        <input type=\"color\" name=\"formPlaceholder\" title=\"Placeholders\" value=\"#767676\" condition=\"customStyle\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#000000\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.4\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"(overlay && bg.type=='image')\"></div>\n    <div class=\"container\">\n        <div class=\"row\">\n            <div mbr-form class=\"col-lg-12 mx-auto mbr-form\">\n                <!--Formbuilder Form-->\n                <form action=\"admin@bhn.kr\" name=\"Form Name\" method=\"POST\" class=\"mbr-form form-with-styler\">\n                    <div class=\"form-row\">\n                        <div hidden=\"hidden\" data-form-alert class=\"alert alert-success col-12\">작성해 주셔서 감사합니다!</div>\n                        <div hidden=\"hidden\" data-form-alert-danger class=\"alert alert-danger col-12\">Oops...! some\n                            problem!</div>\n                    </div>\n                    <div class=\"dragArea form-row\">\n                        <div class=\"col-lg-12 col-md-12 col-sm-12 form-group\">\n                            <div class=\"form-row\">\n                                <div class=\"col\" data-for=\"nameFirst\">\n                                    <span mbr-icon class=\"mbr-iconfont mobi-mbri-user-2 mobi-mbri\" for=\"nameFirst\"></span>\n                                    <input type=\"text\" name=\"nameFirst\" placeholder=\"성명\" data-form-field=\"nameFirst\" class=\"form-control text-multiple\" value>\n                                </div>\n                                <div class=\"col\" data-for=\"nameLast\" hidden=\"hidden\">\n                                    <span mbr-icon class=\"mbr-iconfont mobi-mbri-user-2 mobi-mbri\" for=\"nameLast\" hidden=\"hidden\"></span>\n                                    <input type=\"text\" name=\"nameLast\" placeholder=\"Last Name\" data-form-field=\"nameLast\" class=\"form-control text-multiple\" value hidden=\"hidden\">\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"col-lg-6 col-md-12 col-sm-12 form-group\" data-for=\"email\">\n                            <span mbr-icon class=\"mbr-iconfont mobi-mbri-letter mobi-mbri\" for=\"email\"></span>\n                            <input type=\"email\" name=\"email\" placeholder=\"Email\" data-form-field=\"email\" mbr-theme-style=\"display-7\" class=\"form-control\" value>\n                        </div>\n                        <div class=\"col-lg-6 col-md-12 col-sm-12 form-group\" style data-for=\"phone\">\n                            <span mbr-icon class=\"mbr-iconfont mobi-mbri-phone mobi-mbri\" for=\"phone\"></span>\n                            <input type=\"tel\" name=\"phone\" placeholder=\"핸드폰번호\" data-form-field=\"phone\" mbr-theme-style=\"display-7\" class=\"form-control\" pattern=\"[0-9]{3}-[0-9]{3}-[0-9]{4}\" value>\n                        </div>\n                        <div data-for=\"subject\" class=\"col-lg-12 col-md-12 col-sm-12 form-group\">\n                            <span mbr-icon class=\"mbr-iconfont mobi-mbri-contact-form mobi-mbri\" for=\"subject\"></span>\n                            <input type=\"text\" name=\"subject\" placeholder=\"제목\" data-form-field=\"subject\" mbr-theme-style=\"display-7\" class=\"form-control\" value>\n                        </div>\n                        <div class=\"col-lg-12 col-md-12 col-sm-12 form-group\" data-for=\"message\">\n                            <span mbr-icon class=\"mbr-iconfont mobi-mbri-contact-form mobi-mbri\" for=\"message\"></span>\n                            <textarea name=\"message\" placeholder=\"메시지\" data-form-field=\"message\" mbr-theme-style=\"display-7\" class=\"form-control\"></textarea>\n                        </div>\n                        <div class=\"col-lg-12 col-md-12 col-sm-12 form-group\" data-for=\"how\" style hidden=\"hidden\">\n                            <span mbr-icon class=\"mbr-iconfont mobi-mbri-contact-form mobi-mbri\" for=\"how\" hidden=\"hidden\"></span>\n                            <input type=\"text\" name=\"how\" placeholder=\"How did your hear about us\" data-form-field=\"how\" mbr-theme-style=\"display-7\" class=\"form-control\" value hidden=\"hidden\">\n                        </div>\n                        <div class=\"col-auto m-auto mbr-section-btn\" mbr-buttons=\"true\" mbr-theme-style=\"display-7\" data-toolbar=\"-mbrBtnMove,-mbrLink,-mbrBtnRemove,-mbrBtnAdd\"><a type=\"submit\" class=\"btn btn-primary\" data-app-placeholder=\"Type Text\">메일보내기</a></div>\n                    </div>\n                </form>\n                <!--Formbuilder Form-->\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "s3dejPPX05",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "extForm22-1f"
         },
         {
           "alias": false,
