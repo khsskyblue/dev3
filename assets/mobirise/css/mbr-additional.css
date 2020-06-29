@@ -1831,6 +1831,18 @@ hr {
   width: auto;
   max-width: 100%;
 }
+#custom-html-1m {
+  /* Type valid CSS here */
+}
+#custom-html-1m div {
+  padding: 80px 0;
+  color: #777;
+  text-align: center;
+}
+#custom-html-1m p {
+  font-size: 60px;
+  color: #777;
+}
 .cid-s37SQLQciH {
   padding-top: 135px;
   padding-bottom: 45px;

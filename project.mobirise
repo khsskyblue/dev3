@@ -50,7 +50,7 @@
         "url": "https://fonts.googleapis.com/css?family=Black+Han+Sans:400"
       }
     ],
-    "uniqCompNum": 58,
+    "uniqCompNum": 59,
     "versionPublish": "5.0.10",
     "imageResize": true,
     "screenshot": "screenshot.png",
@@ -73,7 +73,7 @@
         "title": "Home",
         "meta_descr": "",
         "header_custom": "",
-        "footer_custom": "",
+        "footer_custom": "<script type=\"text/javascript\" src=\"//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51f7d86b715ef0da\"></script>\n<script data-who=\"💎 Made with naker.io 💎\" src=\"https://d23jutsnau9x47.cloudfront.net/back/v1.0.9/viewer.js\" data-option=\"{|environment|:{|gradient|:|horizontal|,|sensitivity|:0.6,|colorStart|:[0,0,0,1],|colorEnd|:[0,0,0,1]},|particle|:{|life|:1.1,|power|:0.1,|texture|:|https://res.cloudinary.com/naker-io/image/upload/v1566560053/muzzle_03.png|,|number|:597,|colorStart|:[255,0,0,0.33],|colorEnd|:[255,0,0,0.48],|sizeStart|:2,|sizeEnd|:4,|direction1|:{|x|:0,|y|:0,|z|:0},|direction2|:{|x|:0,|y|:0,|z|:0}},|waterMark|:false}\" data-container=\"features05-7\"></script>",
         "html_before": ""
       },
       "components": [
@@ -1319,6 +1319,20 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "_customTemplate": true,
+          "_afterNavbarItem": false,
+          "_customHTML": "<!-- Type valid HTML here -->\n\n<div>\n    <iframe src=\"https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1cWqQBZCkX9GpzFtxCWHoqFXCHg-ylTVUWlnrdYMzKUI&amp;font=Default&amp;lang=en&amp;initial_zoom=2&amp;height=650\" width=\"100%\" height=\"650\" webkitallowfullscreen=\"\" mozallowfullscreen=\"\" allowfullscreen=\"\" frameborder=\"0\"></iframe>\n</div>",
+          "_customCSS": "/* Type valid CSS here */\n\ndiv {\n  padding: 80px 0;\n  color: #777;\n  text-align: center;\n}\np {\n  font-size: 60px;\n  color: #777;\n}",
+          "alias": "code-editor",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "pro.custom-html",
+          "_anchor": "custom-html-1m",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": []
         },
         {
           "alias": false,
