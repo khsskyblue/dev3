@@ -903,10 +903,9 @@ hr {
   }
 }
 .cid-rQtQGRgRNk .navbar.navbar-short {
- background: rgba(255,255,255,0.8);
- -webkit-backdrop-filter: saturate(180%) blur(20px);
- backdrop-filter: saturate(180%) blur(20px);
- min-height: 60px;  
+  background: #000000 !important;
+  min-height: 60px;
+  opacity: 0.9;
 }
 .cid-rQtQGRgRNk .navbar.navbar-short .navbar-logo img {
   height: 3rem !important;
@@ -973,9 +972,7 @@ hr {
   }
 }
 .cid-rQtQGRgRNk .navbar.navbar-expand-lg .dropdown .dropdown-menu {
-  background: rgba(255,255,255,0.8);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-  backdrop-filter: saturate(180%) blur(20px);
+  background: #000000;
 }
 .cid-rQtQGRgRNk .navbar.navbar-expand-lg .dropdown .dropdown-menu .dropdown-submenu {
   margin: 0;
