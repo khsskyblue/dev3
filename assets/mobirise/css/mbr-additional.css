@@ -973,7 +973,9 @@ hr {
   }
 }
 .cid-rQtQGRgRNk .navbar.navbar-expand-lg .dropdown .dropdown-menu {
-  background: #000000;
+  background: rgba(0,0,0,0.8);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
 }
 .cid-rQtQGRgRNk .navbar.navbar-expand-lg .dropdown .dropdown-menu .dropdown-submenu {
   margin: 0;
